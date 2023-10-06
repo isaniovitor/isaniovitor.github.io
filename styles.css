@@ -1,0 +1,163 @@
+nav {
+  background-color: #333;
+}
+
+.nav-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 3px 7px 5px black;
+  transition: transform 400ms, box-shadow 400ms;
+}
+
+.nav-btn:active {
+  box-shadow: 2px 3px 1px black;
+  transform: translate(4px, 6px);
+}
+
+/* menu dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  border: 1px solid white;
+  min-width: 160px;
+  z-index: 10000;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main{
+  display: flex;
+}
+
+/* navegação lateral */
+.sidebar {
+  background-color: #333;
+  height: 1200px;
+  width: 20vw;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  text-align: center;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 18px;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+/* conteúdo */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  height: 1200px;
+  padding: 20px;
+  background-color: #f0f0f0; 
+}
+
+article {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.loader {
+  /* Define a largura e altura do elemento do spinner */
+  width: 48px;
+  height: 48px;
+  /* Adiciona uma borda branca sólida ao redor do elemento */
+  border: 5px solid #555;
+  /* Torna a cor da borda inferior transparente */
+  border-bottom-color: transparent;
+  /* Define um raio de borda de 50%, transformando o elemento em um círculo */
+  border-radius: 50%;
+  /* Define o elemento como um bloco de exibição inline */
+  display: inline-block;
+  /* Faz com que o tamanho do elemento inclua a largura das bordas */
+  box-sizing: border-box;
+  /* Adiciona uma animação chamada "rotation" ao elemento */
+  animation: rotation 1s linear infinite;
+  }
+
+  /* Define uma animação para girar o spinner */
+  @keyframes rotation {
+    /* Define o estado inicial da animação */
+    0% {
+        /* Define o elemento como não girado (0 graus) */
+        transform: rotate(0deg);
+    }
+    /* Define o estado final da animação */
+    100% {
+        /* Define o elemento como girado 360 graus (rotação completa) */
+        transform: rotate(360deg);
+    }
+  } 
+
+/* responsividade */
+@media screen and (max-width:600px) {
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .content {
+    width: fit-content;
+  }
+}

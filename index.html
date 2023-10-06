@@ -3,9 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Prova 01</title>
 </head>
 <body>
-  <div>teste</div>
+  <nav >
+    <button class="nav-btn">Início</button>
+    <div class="dropdown">
+        <button class="nav-btn">Agentes</button>
+        <div class="dropdown-content">
+            <a href="#">Jett</a>
+            <a href="#">Phoenix</a>
+            <a href="#">Sage</a>
+            <a href="#">Sova</a>
+            <a href="#">Viper</a>
+        </div>
+    </div>
+    <button class="nav-btn">Mapas</button>
+  </nav>
+
+  <main>
+      <nav class="sidebar">
+        <ul>
+            <li><a href="#">Página Inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Portfólio</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    
+      <div class="content">
+        <article>
+            <section>
+                <h2>Sobre Valorant</h2>
+                <p>Valorant é um jogo de tiro em primeira pessoa desenvolvido pela Riot Games. ...</p>
+            </section>
+            <section>
+                <h2>Agentes em Valorant</h2>
+                <p>Conheça os agentes jogáveis em Valorant e suas habilidades exclusivas...</p>
+            </section>
+        </article>
+        <span class="loader"></span>
+      </div>
+  </main>
+
+ 
 </body>
 </html>
